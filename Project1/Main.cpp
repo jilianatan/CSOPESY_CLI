@@ -23,6 +23,9 @@ int main() {
         if (command == "Initialize") {
             initialize();
         }
+        else if (command == "Screen") {
+            screen();
+        }
 
     }
 
@@ -33,4 +36,8 @@ int main() {
 void initialize() {
 
     std::cout << "Initialize command recognized. Doing something.";
+}
+
+void screen() {
+    std::cout << "Screen command recognized. Doing something.";
 }
