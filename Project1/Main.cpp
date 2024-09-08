@@ -16,20 +16,29 @@ int main() {
     while (command != "Exit") {
 
         std::cout << "\n[ DISPLAY HEADER ]\n";
-        std::cout << "List of Commands:\n * Initialize\n * Screen\n * Schedule Tester\n * Schedule Stop\n * Report Util\n * Clear\n * Exit\n";
-        std::cout << "Enter a command: ";
+        std::cout << "List of Commands:\n * Initialize\n * Screen\n * Schedule-Tester\n * Schedule-Stop\n * Report-Util\n * Clear\n * Exit\n";
+        std::cout << "\nEnter a command: ";
         std::getline(std::cin, command);
 
-        if (command == "Initialize") {
+        for (auto& c : command) c = tolower(c);
+
+        if (command == "initialize") {
             initialize();
         }
-        else if (command == "Screen") {
+        else if (command == "screen") {
             screen();
+        }
+        else if (command == "schedule-tester") {
+            scheduleTester();
+        }
+        else if (command == "schedule-stop") {
+            scheduleTester();
+        }
+        else if (command == "report-util") {
+            reportUtil();
         }
 
     }
-
-
 
 }
 
@@ -40,4 +49,16 @@ void initialize() {
 
 void screen() {
     std::cout << "Screen command recognized. Doing something.";
+}
+
+void scheduleTester() {
+    std::cout << "Schedule Tester command recognized. Doing something.";
+}
+
+void schedulerStop() {
+    std::cout << "Scheduler Stop command recognized. Doing something.";
+}
+
+void reportUtil() {
+    std::cout << "Report Util command recognized. Doing something.";
 }
