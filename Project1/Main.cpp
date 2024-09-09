@@ -4,7 +4,7 @@
 
 void initialize();
 void screen();
-void scheduleTester();
+void schedulerTest();
 void schedulerStop();
 void reportUtil();
 void clear();
@@ -26,7 +26,7 @@ int main() {
 
 
         
-        std::cout << "List of Commands:\n * Initialize\n * Screen\n * Schedule-Tester\n * Schedule-Stop\n * Report-Util\n * Clear\n * Exit\n";
+        std::cout << "List of Commands:\n * Initialize\n * Screen\n * Scheduler-Test\n * Scheduler-Stop\n * Report-Util\n * Clear\n * Exit\n";
         std::cout << "\nEnter a command: ";
         std::getline(std::cin, command);
 
@@ -38,11 +38,11 @@ int main() {
         else if (command == "screen") {
             screen();
         }
-        else if (command == "schedule-tester") {
-            scheduleTester();
+        else if (command == "scheduler-test") {
+            schedulerTest();
         }
-        else if (command == "schedule-stop") {
-            scheduleTester();
+        else if (command == "scheduler-stop") {
+            schedulerStop();
         }
         else if (command == "report-util") {
             reportUtil();
@@ -75,15 +75,15 @@ void screen() {
     std::cout << "\n^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^\n\n";
 }
 
-void scheduleTester() {
+void schedulerTest() {
     std::cout << "\n^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^\n\n";
-    std::cout << "Schedule Tester command recognized. Doing something.\n";
+    std::cout << "Scheduler-Test command recognized. Doing something.\n";
     std::cout << "\n^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^\n\n";
 }
 
 void schedulerStop() {
     std::cout << "\n^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^\n\n";
-    std::cout << "Scheduler Stop command recognized. Doing something.\n";
+    std::cout << "Scheduler-Stop command recognized. Doing something.\n";
     std::cout << "\n^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^v^\n\n";
 }
 
