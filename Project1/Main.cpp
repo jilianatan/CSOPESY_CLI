@@ -7,8 +7,6 @@ void screen();
 void schedulerTest();
 void schedulerStop();
 void reportUtil();
-void clear();
-void exit();
 
 int main() {
     std::string command;
