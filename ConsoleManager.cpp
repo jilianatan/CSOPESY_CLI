@@ -119,6 +119,7 @@ void ConsoleManager::handleInput(const std::string& input) {
     }
 
 
+    
  
 }
 void ConsoleManager::drawAllConsoles() {
