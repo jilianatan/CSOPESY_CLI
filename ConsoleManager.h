@@ -26,3 +26,4 @@ public:
 
     std::string getCurrentConsoleName() const;
 };
+
