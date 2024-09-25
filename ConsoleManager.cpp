@@ -81,11 +81,6 @@ void ConsoleManager::handleInput(const std::string& input) {
     }
     else if (tokens.size() == 3 && tokens[0] == "screen" && tokens[1] == "-s" && tokens[2] != "" && currentConsole->getName() == "MAIN_MENU") {
 
-        // go to the next screen
-        // add this to the console
-        //console = new Console(tokens[2], 0, 50, 32332);
-        //addConsole(&console);
-        // first check if the name is already existing
         bool isExistingProcess = false;
 
         for (const auto& consolePtr : consoles) {
@@ -107,8 +102,6 @@ void ConsoleManager::handleInput(const std::string& input) {
             currentConsole->drawProcess();
 
         }
-        //currentConsole = new Console(tokens[2], 0, 100, 50);
-        //currentConsole->drawProcess();
 
     }
 

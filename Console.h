@@ -17,14 +17,4 @@ public:
 
     std::string getName() const;
 
-   /*
-    int getCurrentLine() const { return currentLine; }
-    int getTotalLines() const { return totalLines; }
-    int getProcessId() const { return processId; }
-    
-    void setName(const std::string& n) { name = n; }
-    void setCurrentLine(int cLine) { currentLine = cLine; }
-    void setTotalLines(int tLines) { totalLines = tLines; }
-    void setProcessId(int id) { processId = id; }
-    */
 };
